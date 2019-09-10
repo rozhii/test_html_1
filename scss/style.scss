@@ -164,5 +164,57 @@ hr{
       }
     }
   }
+  .footer{
+    display: flex;
+    justify-content: space-between;
+    @include font;
+    color: $font_color1;
+    .left{
+      display: flex;
+      background-color: $bg_color1;
+      .list{
+        margin: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        list-style: none;
+        box-sizing: border-box;
+        .item{
 
+        }
+      }
+      &_list_first{
+        padding-left: 25px;
+      }
+      &_list_second{
+        padding-left: 80px;
+        padding-right: 80px;
+      }
+    }
+    .center{
+      @include font;
+      color: $font_color1;
+      background-color: $bg_color1;
+      margin-left: 20px;
+      .list{
+        margin: 0;
+        list-style-type: square;
+        padding: 15px 50px 15px 35px;
+      }
+    }
+    .right{
+      margin-left: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .top{
+        width: 308px;
+        height: 75px;
+        background-color: $bg_color1;
+      }
+      .buttom{
+        width: 308px;
+        height: 75px;
+      }
+    }
+  }
 }
